@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-
-
-function App() {
+import UserList from './UserList';
+import TodoList from './TodoList';
+function App({task}) {
   return (
-    
-   <>
-   <p>Hola Mundo</p></>
+    <>
+   <UserList task={task}/>
+   <TodoList />
+    </>
   );
 }
 
